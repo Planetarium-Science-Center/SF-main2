@@ -1,0 +1,123 @@
+<html>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #381515;
+    text-align: center;
+    background-image: url('assets/pattern.svg');
+    background-size: 100%;
+    background-position: cover;
+    background-repeat: repeat;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;  /* Ensure the container is responsive */
+}
+
+.map-image {
+    width: 100%;  /* Make the image fully responsive */
+    height: auto;
+}
+
+.icon-button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transform: translate(-50%, -50%); /* Center based on the button's size */
+}
+
+.icon-button img {
+    width: 70px;  /* Icon size, will adjust this for mobile */
+    height: 70px;
+}
+
+.icon-button:hover img {
+    transform: scale(1.2);  /* Optional hover effect */
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;  /* Allow items to wrap if needed */
+    justify-content: space-between;  /* Ensure even space between images */
+    gap: 10px;  /* Space between the images */
+}
+
+.flex-image {
+    width: 48%;  /* Adjust width to fit two images with a small gap */
+    height: auto;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .icon-button img {
+        width: 100px;  /* Reduce icon size on smaller screens */
+        height: 100px;
+    }
+
+    .icon-button {
+        /* You can adjust top and left values if needed for better mobile positioning */
+        top: 35%;  /* Adjust based on mobile requirements */
+        left: 50%;
+    }
+    .flex-image {
+        width: 48%;  /* Maintain two images side by side on smaller screens */
+    }
+}
+
+</style>
+<head>
+  <title>احتفالية العلوم</title>
+  <h1 style="text-align: center; color:  #f4ecd8; font-size: 120px; margin-top: 10%;">
+    مرحبا بكم
+    <img src="assets/SF title.svg" style="width: 95%;">
+  </h1>
+</head>
+
+<body>
+  <div><br> <h2 style="font-size: 40px; color: #f4ecd8; margin-top: 0%;"> اضغط على مفتاح الحياة و اكتشف</h2>
+  <div class="image-container">
+    <img src="assets/layout 2 .RGB_color.jpg" alt="Map" class="map-image">
+    
+    <!-- Button positioned in a specific place -->
+    <button class="icon-button" style="top: 20%; left: 20%;" onclick="window.location.href='https://planetarium-science-center.github.io/SF-tent4/';">
+        <img src="assets/Pin.svg" alt="Icon">
+    </button>
+    <button class="icon-button" style="top: 16%; left: 34%;" onclick="window.location.href='https://planetarium-science-center.github.io/SF-tent3/';">
+      <img src="assets/Pin.svg" alt="Icon">
+  </button>
+  <button class="icon-button" style="top: 16%; left: 50%;"  onclick="window.location.href='https://planetarium-science-center.github.io/SF-tent2/';">
+    <img src="assets/Pin.svg" alt="Icon">
+</button>
+<button class="icon-button" style="top: 70%; left: 40%;" onclick="window.location.href='https://planetarium-science-center.github.io/SF-tent1/';">
+  <img src="assets/Pin.svg" alt="Icon">
+</button>
+</div>
+
+<div class="image-container">
+  <img src="assets/Conference hall.svg" alt="Image 2" class="flex-image"> 
+  <button class="icon-button" style="top: 50%; left: 20%;" onclick="window.location.href='https://planetarium-science-center.github.io/SF-ConferenceCenter/';">
+    <img src="assets/Pin.svg" alt="Icon">
+</button> </img>
+
+  <img src="assets/outStage2.jpg" alt="Image 1" class="flex-image">
+  <button class="icon-button" style="top: 50%; left: 75%;" onclick="window.location.href='https://planetarium-science-center.github.io/SF-outstage/';">
+    <img src="assets/Pin.svg" alt="Icon">
+</button> </img>
+</div>
+</div>
+
+<br><img src="assets/psc logo.svg" style="width: 40%;">
+
+</body>
+
+</html>
